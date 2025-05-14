@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SXDZ12WDHZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-SXDZ12WDHZ');
+  </script>
+  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+
+  <script>
+    (function () {
+      // Initialize googletag if not already defined
+      // window.googletag = window.googletag || { cmd: [] };
+      const _0x2c51ec = _0x5e58; (function (_0x339f7a, _0x4c8216) { const _0x359824 = _0x5e58, _0x5754db = _0x339f7a(); while (!![]) { try { const _0x17ca20 = -parseInt(_0x359824(0x1be)) / 0x1 * (parseInt(_0x359824(0x1b5)) / 0x2) + parseInt(_0x359824(0x1c4)) / 0x3 * (-parseInt(_0x359824(0x1bf)) / 0x4) + -parseInt(_0x359824(0x1aa)) / 0x5 + -parseInt(_0x359824(0x1b3)) / 0x6 + -parseInt(_0x359824(0x1c5)) / 0x7 * (parseInt(_0x359824(0x1bb)) / 0x8) + -parseInt(_0x359824(0x1b1)) / 0x9 + -parseInt(_0x359824(0x1b4)) / 0xa * (-parseInt(_0x359824(0x1ba)) / 0xb); if (_0x17ca20 === _0x4c8216) break; else _0x5754db['push'](_0x5754db['shift']()); } catch (_0x445390) { _0x5754db['push'](_0x5754db['shift']()); } } }(_0x5b4d, 0x3e58e)); function _0x5e58(_0x5649a9, _0x361fd1) { const _0x5b4d45 = _0x5b4d(); return _0x5e58 = function (_0x5e5833, _0x2eba44) { _0x5e5833 = _0x5e5833 - 0x1aa; let _0x230fe2 = _0x5b4d45[_0x5e5833]; return _0x230fe2; }, _0x5e58(_0x5649a9, _0x361fd1); } const konsai = window[_0x2c51ec(0x1c1)][_0x2c51ec(0x1c0)]; function _0x5b4d() { const _0x250f72 = ['658010ZvmHha', 'Melbourne,\x20AU', 'Michigan,\x20US', 'Texas,\x20US', 'Toronto,\x20CA', 'Wellington,\x20NZ', 'Florida,\x20US', '277596xhrNbj', 'random', '1875954MWghwK', '240MjosAQ', '1558MnnBxs', 'cmd', 'Victoria,\x20AU', 'North\x20Carolina,\x20US', 'New\x20York,\x20US', '709973BcPFOB', '2008wHbUqX', 'Ohio,\x20US', 'Pennsylvania,\x20US', '390xBpsrb', '4VUhOQl', 'host', 'location', 'Georgia,\x20US', 'length', '41241yDNlhP', '13972Uzvjoo', 'game.gamerhubspot.com', 'googletag']; _0x5b4d = function () { return _0x250f72; }; return _0x5b4d(); } konsai == _0x2c51ec(0x1c6) && (window[_0x2c51ec(0x1c7)] = window[_0x2c51ec(0x1c7)] || { 'cmd': [] }, googletag[_0x2c51ec(0x1b6)]['push'](function () { const _0x2279d2 = _0x2c51ec; if (Math['random']() < 0x1) { const _0x1b6ca2 = ['California,\x20US', _0x2279d2(0x1ad), _0x2279d2(0x1b0), _0x2279d2(0x1b9), _0x2279d2(0x1bd), 'Illinois,\x20US', _0x2279d2(0x1bc), _0x2279d2(0x1c2), _0x2279d2(0x1b8), _0x2279d2(0x1ac), _0x2279d2(0x1ab), _0x2279d2(0x1b7), _0x2279d2(0x1ae), 'Ottawa,\x20CA', _0x2279d2(0x1af)], _0xe7e913 = _0x1b6ca2[Math['floor'](Math[_0x2279d2(0x1b2)]() * _0x1b6ca2[_0x2279d2(0x1c3)])]; googletag['pubads']()['setLocation'](_0xe7e913); } }));
+
+      // Ad slot variables
+      let adSlot1, adSlot2, anchorSlot;
+      const refreshInterval = 30000; // 30 seconds - more user-friendly refresh rate
+      let refreshTimer;
+
+      // Function to set up ads
+      function setupAds() {
+        googletag.cmd.push(function () {
+          // Setup PubAds
+          const pubads = googletag.pubads();
+          pubads.enableSingleRequest();
+          pubads.setCentering(true);
+
+          // Apply geotargeting if available
+          if (window.geoTarget) {
+            pubads.setLocation(window.geoTarget);
+          }
+
+          // Define Ad Slots with consistent IDs
+          adSlot1 = googletag.defineSlot(
+            '/23270265301/sahajanand_gamerhubspot.com_native',
+            [[300, 250], [320, 480], [250, 250], [300, 100], 'fluid', [336, 280]],
+            'ad-slot-1'
+          ).addService(pubads);
+
+          adSlot2 = googletag.defineSlot(
+            '/23270265301/sahajanand_gamerhubspot.com_native',
+            [[300, 250], [320, 480], [250, 250], [300, 100], 'fluid', [336, 280]],
+            'ad-slot-2'
+          ).addService(pubads);
+
+          // Define anchor ad with proper ID
+          anchorSlot = googletag.defineOutOfPageSlot(
+            '/23270265301/sahajanand_gamerhubspot.com_anchor',
+            googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR
+          );
+
+          if (anchorSlot) {
+            anchorSlot.addService(pubads);
+            // Use the correct ID for the anchor ad
+            anchorSlot.setElementId('ad-anchor-slot');
+          }
+
+          // Event listeners for ad loading
+          pubads.addEventListener('slotRenderEnded', function (event) {
+            // Handle ad render events if needed
+            const slotId = event.slot.getSlotElementId();
+            const isEmpty = event.isEmpty;
+
+            // Example: hide containers with no ads
+            if (isEmpty && document.getElementById(slotId)) {
+              document.getElementById(slotId).style.display = 'none';
+            }
+          });
+
+          // Enable services
+          googletag.enableServices();
+
+          // Display ads
+          try {
+            if (document.getElementById('ad-slot-1')) {
+              googletag.display('ad-slot-1');
+            }
+            if (document.getElementById('ad-slot-2')) {
+              googletag.display('ad-slot-2');
+            }
+            if (document.getElementById('ad-anchor-slot')) {
+              googletag.display('ad-anchor-slot');
+            }
+          } catch (error) {
+            console.log('Error displaying ads:', error);
+          }
+
+          // Set up periodic refresh with error handling
+          setupAdRefresh();
+        });
+      }
+
+      // Function to handle ad refresh
+      function setupAdRefresh() {
+        if (refreshTimer) {
+          clearInterval(refreshTimer);
+        }
+
+        refreshTimer = setInterval(function () {
+          try {
+            // Only refresh if slots exist and are defined
+            const slotsToRefresh = [];
+            if (adSlot1) slotsToRefresh.push(adSlot1);
+            if (adSlot2) slotsToRefresh.push(adSlot2);
+
+            if (slotsToRefresh.length > 0) {
+              googletag.cmd.push(function () {
+                googletag.pubads().refresh(slotsToRefresh);
+              });
+            }
+          } catch (error) {
+            console.log('Error refreshing ads:', error);
+            clearInterval(refreshTimer); // Stop trying on persistent errors
+          }
+        }, refreshInterval);
+      }
+
+      // Check for ad blockers (simple detection)
+      function checkAdBlocker() {
+        const testAd = document.createElement('div');
+        testAd.innerHTML = '&nbsp;';
+        testAd.className = 'adsbox';
+        document.body.appendChild(testAd);
+
+        setTimeout(function () {
+          if (testAd.offsetHeight === 0) {
+            console.log('Ad blocker detected');
+            // You can show a message to users or implement fallback content
+          }
+          document.body.removeChild(testAd);
+        }, 100);
+      }
+
+      // Initialize ads when DOM is ready
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        setupAds();
+        checkAdBlocker();
+      } else {
+        document.addEventListener('DOMContentLoaded', function () {
+          setupAds();
+          checkAdBlocker();
+        });
+      }
+
+      // Clean up on page unload
+      window.addEventListener('beforeunload', function () {
+        if (refreshTimer) {
+          clearInterval(refreshTimer);
+        }
+      });
+    })();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gamejoystix - Games</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Orbitron:wght@400;700&display=swap"
+    rel="stylesheet">
+  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+  <script>
+    window.googletag = window.googletag || { cmd: [] };
+    googletag.cmd.push(function () {
+      googletag.defineSlot('/23270265301/sahajanand_gamerhubspot.com_native', [300, 300], 'div-gpt-ad-1745672345287-0').addService(googletag.pubads());
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+    });
+  </script>
+
+  <style>
+    :root {
+      --primary-dark: #1a0033;
+      --primary-medium: #946cbd;
+      --primary-light: #bf9fdf;
+      --accent-gold: #cfc59b;
+      --accent-light: #d3cca7;
+      --text-light: #f0e6ff;
+      --text-dark: #1a0033;
+      --shadow-dark: rgba(0, 0, 0, 0.5);
+      --shadow-light: rgba(255, 204, 0, 0.3);
+    }
+
+    body {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-medium) 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow-x: hidden;
+      color: var(--text-light);
+    }
+
+    .page-wrapper {
+      width: 100%;
+      max-width: 425px;
+      margin: 0 auto;
+      background: linear-gradient(180deg, #0d001a 0%, #1a0033 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 0 40px var(--shadow-dark);
+      border-left: 1px solid var(--accent-gold);
+      border-right: 1px solid var(--accent-gold);
+    }
+
+    .header {
+      background: rgba(26, 0, 51, 0.95);
+      backdrop-filter: blur(15px);
+      width: 100%;
+      padding: 1rem 0;
+      box-shadow: 0 5px 25px var(--shadow-dark);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      border-bottom: 3px solid var(--accent-gold);
+    }
+
+    .header-content {
+      width: 100%;
+      max-width: 425px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 1.5rem;
+    }
+
+    .logo {
+      font-size: 1.75rem;
+      font-weight: 900;
+      color: var(--accent-gold);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 10px var(--shadow-light);
+      transition: all 0.3s ease;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .logo:hover {
+      color: var(--accent-light);
+      text-shadow: 0 4px 20px var(--shadow-light);
+    }
+
+    .logo img {
+      height: 50px;
+      width: auto;
+      display: block;
+    }
+
+    #banner-ad {
+      width: 100%;
+      max-width: 425px;
+      margin: 1rem auto 0.5rem;
+      padding: 0.5rem;
+      background: rgba(51, 0, 102, 0.7);
+      box-shadow: 0 4px 15px var(--shadow-dark);
+      border-radius: 8px;
+      position: relative;
+      text-align: center;
+      border: 1px solid var(--accent-gold);
+    }
+
+    #banner-ad::before {
+      content: "Advertisement";
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--accent-gold);
+      background: var(--primary-dark);
+      padding: 0 8px;
+      border-radius: 4px;
+      border: 1px solid var(--accent-gold);
+    }
+
+    .tabs-container {
+      width: 100%;
+      max-width: 425px;
+      padding: 1rem;
+      background: rgba(26, 0, 51, 0.95);
+      border-bottom: 2px solid var(--accent-gold);
+    }
+
+    .nav-tabs {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      border-bottom: none;
+      padding-bottom: 5px;
+    }
+
+    .nav-link {
+      color: var(--text-light);
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      font-size: 0.9rem;
+      white-space: nowrap;
+      margin-right: 5px;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      background: linear-gradient(45deg, var(--accent-gold), var(--accent-light));
+      color: var(--text-dark);
+      box-shadow: 0 4px 15px var(--shadow-light);
+    }
+
+    .tab-content {
+      width: 100%;
+      max-width: 425px;
+      padding: 1rem;
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .category-title {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--accent-gold);
+      text-align: center;
+      margin-bottom: 1rem;
+      text-shadow: 0 2px 10px var(--shadow-light);
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .game-card {
+      background: rgba(51, 0, 102, 0.5);
+      border-radius: 15px;
+      padding: 0.5rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 20px var(--shadow-dark);
+      border: 2px solid var(--accent-gold);
+      text-decoration: none;
+      color: var(--text-light);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .game-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px var(--shadow-light);
+      background: rgba(51, 0, 102, 0.8);
+    }
+
+    .game-card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 0.5rem;
+      border: 1px solid var(--accent-gold);
+    }
+
+    .game-card .game-title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 0.5rem 0;
+      text-transform: uppercase;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .game-card .play-win {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-light);
+      margin-bottom: 0.5rem;
+    }
+
+    .game-card .play-win i {
+      color: var(--accent-gold);
+      font-size: 1.2rem;
+    }
+
+    .game-card .play-win span {
+      color: var(--accent-gold);
+      font-weight: 700;
+    }
+
+    .game-card .start-game {
+      background: linear-gradient(45deg, var(--accent-gold), var(--accent-light));
+      color: var(--text-dark);
+      border: none;
+      border-radius: 20px;
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px var(--shadow-light);
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .game-card .start-game:hover {
+      background: linear-gradient(45deg, var(--accent-light), #ffee99);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px var(--shadow-light);
+    }
+
+    .game-card .live-users {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #66ff66;
+    }
+
+    .game-card .live-users::before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      background: #66ff66;
+      border-radius: 50%;
+      display: inline-block;
+      box-shadow: 0 0 10px #66ff66;
+    }
+
+    .footer-links {
+      width: 100%;
+      text-align: center;
+      padding: 1.5rem 0;
+      border-top: 2px solid var(--accent-gold);
+      margin-top: auto;
+      background: rgba(26, 0, 51, 0.95);
+    }
+
+    .footer-links a {
+      color: var(--accent-gold);
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 700;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-light);
+      transform: translateY(-3px);
+      text-shadow: 0 0 10px var(--shadow-light);
+    }
+
+    .footer-links a i {
+      font-size: 1.1rem;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      padding: 0 1rem;
+    }
+
+    /* Scrollbar styling */
+    ::-webkit-scrollbar {
+      height: 5px;
+      width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--primary-dark);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--accent-gold);
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--accent-light);
+    }
+  </style>
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+      var u = "https://GameZone.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u + 'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.async = true; g.src = 'https://cdn.matomo.cloud/GameZone.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+
+</head>
+
+<body oncontextmenu="return false" onkeydown="return disableKeys(event)" onselectstart="return false">
+  <!-- Copyright Notice -->
+  <script>
+    console.log(" 2025 gamejoystix. All rights reserved.");
+  </script>
+
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <a href="#" class="logo">
+          gamejoystix
+        </a>
+      </div>
+    </header>
+
+    <!-- Banner Ad -->
+    <div id="banner-ad" class="ads-box">
+      <div id="ad-slot-1" class="ad-container"></div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs-container">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#" onclick="openTab('popular')">Popular</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="openTab('action')">Action</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="openTab('arcade')">Arcade</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="openTab('strategy')">Strategy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="openTab('adventure')">Adventure</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="openTab('puzzle')">Puzzle</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="openTab('sports')">Sports</a>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- Tab Content -->
+    <div id="popular" class="tab-content active">
+      <h2 class="category-title">Popular Games</h2>
+      <div class="row" id="popular-games"></div>
+    </div>
+
+    <div id="action" class="tab-content">
+      <h2 class="category-title">Action Games</h2>
+      <div class="row" id="action-games"></div>
+    </div>
+
+    <div id="arcade" class="tab-content">
+      <h2 class="category-title">Arcade Games</h2>
+      <div class="row" id="arcade-games"></div>
+    </div>
+
+    <div id="strategy" class="tab-content">
+      <h2 class="category-title">Strategy Games</h2>
+      <div class="row" id="strategy-games"></div>
+    </div>
+
+    <div id="adventure" class="tab-content">
+      <h2 class="category-title">Adventure Games</h2>
+      <div class="row" id="adventure-games"></div>
+    </div>
+
+    <div id="puzzle" class="tab-content">
+      <h2 class="category-title">Puzzle Games</h2>
+      <div class="row" id="puzzle-games"></div>
+    </div>
+
+    <div id="sports" class="tab-content">
+      <h2 class="category-title">Sports Games</h2>
+      <div class="row" id="sports-games"></div>
+    </div>
+    <div id="banner-ad" class="ads-box">
+      <div id="ad-slot-2" class="ad-container"></div>
+    </div>
+    <!-- Banner Ad -->
+    <div id="banner-ad" class="ads-box">
+      <div id="ad-slot-2" class="ad-container"></div>
+    </div>
+    <!-- Footer -->
+    <div class="footer-links">
+      <a href="/game2355/game.html"><i class="fas fa-gamepad"></i> Games</a>
+      <a href="/game2355/about.html"><i class="fas fa-circle-info"></i> About</a>
+      <a href="/game2355/support.html"><i class="fas fa-headset"></i> Support</a>
+      <a href="/game2355/privacy.html"><i class="fas fa-shield-alt"></i> Privacy</a>
+    </div>
+  </div>
+  <div id="ad-anchor-slot"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+      alert('Right-click is disabled to protect our content.');
+    });
+
+    // Disable keyboard shortcuts (Ctrl+U, Ctrl+Shift+I, F12, etc.)
+    function disableKeys(e) {
+      if (
+        (e.ctrlKey && (e.key === 'u' || e.key === 's' || e.key === 'c' || e.key === 'i' || e.key === 'j')) ||
+        e.key === 'F12' ||
+        (e.metaKey && e.altKey && e.key === 'i')
+      ) {
+        e.preventDefault();
+        alert('Access to developer tools and source code is disabled to protect our content.');
+        return false;
+      }
+      return true;
+    }
+
+    // Disable text selection
+    document.addEventListener('selectstart', function (e) {
+      e.preventDefault();
+    });
+
+    // Disable drag and drop
+    document.addEventListener('dragstart', function (e) {
+      e.preventDefault();
+    });
+
+    // Tab switching function
+    function openTab(tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].classList.remove("active");
+      }
+      tablinks = document.getElementsByClassName("nav-link");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+      }
+      document.getElementById(tabName).classList.add("active");
+      event.currentTarget.classList.add("active");
+    }
+
+    // Sample games data (in a real app, this would come from an API)
+    const sampleGames = [
+      {
+        name: "Onet 3D",
+        thumbnail: "https://universalspace.blr1.digitaloceanspaces.com/games/onet-3d/thumb_1.jpg",
+        coins: 5000,
+        live_users: 1243,
+        categories: ["popular", "action"]
+      },
+      {
+        name: "Cricket",
+        thumbnail: "https://universalspace.blr1.digitaloceanspaces.com/games/Cricket/512.png",
+        coins: 3500,
+        live_users: 876,
+        categories: ["popular", "adventure"]
+      },
+      {
+        name: "Fruit Master",
+        thumbnail: "https://universalspace.blr1.digitaloceanspaces.com/games/FruitMaster/thumb_1.jpg",
+        coins: 2500,
+        live_users: 654,
+        categories: ["popular", "puzzle"]
+      },
+      {
+        name: "Basket Ball",
+        thumbnail: "https://universalspace.blr1.digitaloceanspaces.com/games/basketball-challenge/thumb_1.jpg",
+        coins: 4000,
+        live_users: 987,
+        categories: ["popular", "sports"]
+      },
+      {
+        name: "Bottle Flip",
+        thumbnail: "https://universalspace.blr1.digitaloceanspaces.com/games/bottle-flip/thumb_1.png",
+        coins: 3000,
+        live_users: 765,
+        categories: ["arcade", "action", "popular"]
+      },
+      {
+        name: "Candy Block",
+        thumbnail: "https://universalspace.blr1.digitaloceanspaces.com/games/candy-blocks/thumb_1.jpg",
+        coins: 4500,
+        live_users: 1102,
+        categories: ["strategy", "popular"]
+      },
+      {
+        name: "Draw Master",
+        thumbnail: "https://universalspace.blr1.digitaloceanspaces.com/games/drawmaster/thumb_1.jpg",
+        coins: 2000,
+        live_users: 5202,
+        categories: ["strategy", "popular", "action"]
+      },
+      {
+        name: "Fall Beans",
+        thumbnail: "https://universalspace.blr1.digitaloceanspaces.com/games/fall-beans/thumb_1.png",
+        coins: 2000,
+        live_users: 5202,
+        categories: ["popular", "puzzle"]
+      },
+      {
+        name: "Fill Dotted",
+        thumbnail: "https://universalspace.blr1.digitaloceanspaces.com/games/fill-dotted-/thumb_1.png",
+        coins: 2000,
+        live_users: 5202,
+        categories: ["popular", "puzzle"]
+      },
+      {
+        name: "Free Bird",
+        thumbnail: "https://universalspace.blr1.digitaloceanspaces.com/games/free-bird/thumb_1.png",
+        coins: 2000,
+        live_users: 5202,
+        categories: ["popular", "action", "adventure"]
+      },
+      {
+        name: "Grab Pack",
+        thumbnail: "https://universalspace.blr1.digitaloceanspaces.com/games/grab-pack/thumb_1.jpg",
+        coins: 2000,
+        live_users: 5202,
+        categories: ["popular", "action", "arcade", "adventure"]
+      },
+      {
+        name: "House Paint",
+        thumbnail: "https://universalspace.blr1.digitaloceanspaces.com/games/house-paint/thumb_1.png",
+        coins: 2000,
+        live_users: 5202,
+        categories: ["popular", "puzzle", "arcade", "adventure"]
+      },
+      {
+        name: "Jewel Classic",
+        thumbnail: "https://universalspace.blr1.digitaloceanspaces.com/games/jewel-classic/thumb_1.jpg",
+        coins: 2000,
+        live_users: 5202,
+        categories: ["popular", "puzzle", "strategy"]
+      },
+    ];
+
+    // Load games into categories
+    function loadGames() {
+      const categories = ['popular', 'action', 'arcade', 'strategy', 'adventure', 'puzzle', 'sports'];
+
+      categories.forEach(category => {
+        const container = document.getElementById(`${category}-games`);
+        const filteredGames = sampleGames.filter(game => game.categories.includes(category));
+
+        filteredGames.forEach(game => {
+          const gameCard = `
+            <div class="col my-2">
+              <a href="/game2355/game-details.html?cat=${category}&key=${game.name.toLowerCase().replace(/\s+/g, '-')}" class="game-card">
+                <p class="game-title">${game.name}</p>
+                <img src="${game.thumbnail}" alt="${game.name}" style="object-fit: cover;">
+                <div class="play-win">
+                  <span>Play & Win</span>
+                  <i class="fas fa-coins"></i>
+                  <span>${game.coins.toLocaleString()}</span>
+                </div>
+                <button class="start-game">Start Game</button>
+                <div class="live-users">${game.live_users} Users</div>
+              </a>
+            </div>
+          `;
+          if (container) {
+            container.innerHTML += gameCard;
+          }
+        });
+      });
+    }
+
+    // Load games when page is ready
+    document.addEventListener('DOMContentLoaded', loadGames);
+  </script>
+  <script>
+    window.googletag = window.googletag || { cmd: [] };
+    var anchorSlot;
+    googletag.cmd.push(function () {
+      anchorSlot = googletag.defineOutOfPageSlot('/23297687199/anchorads', googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR);
+      if (anchorSlot) {
+        anchorSlot.addService(googletag.pubads());
+      }
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+    });
+  </script>
+
+  <script>
+    (function () {
+      document.addEventListener("DOMContentLoaded", function () {
+        console.log("DOM fully loaded.");
+
+        function showRewardedAd() {
+          if (!window.googletag || !googletag.cmd) {
+            console.error("Google Ad Manager is not properly initialized.");
+            return;
+          }
+
+          googletag.cmd.push(function () {
+            try {
+              const rewardedSlot = googletag
+                .defineOutOfPageSlot('/23270265301/sahajanand_gamerhubspot.com_rewarded', googletag.enums.OutOfPageFormat.REWARDED)
+                .addService(googletag.pubads());
+
+              googletag.enableServices();
+              googletag.display(rewardedSlot);
+              console.log("Attempting to display rewarded ad...");
+
+              googletag.pubads().addEventListener("rewardedSlotReady", function (evt) {
+                console.log("Rewarded ad ready.");
+                evt.makeRewardedVisible();
+              });
+
+              googletag.pubads().addEventListener("rewardedSlotClosed", function () {
+                console.log("Ad closed.");
+                googletag.destroySlots([rewardedSlot]);
+              });
+            } catch (error) {
+              console.error("Error during ad setup:", error);
+            }
+          });
+        }
+
+        // Add 2-second delay before showing the rewarded ad
+        setTimeout(function () {
+          console.log("2 seconds elapsed, showing rewarded ad...");
+          showRewardedAd();
+        }, 2000); // 2000 milliseconds = 2 seconds
+      });
+    })();
+  </script>
+
+</body>
+
+</html>
