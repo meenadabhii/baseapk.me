@@ -684,59 +684,22 @@
     </script >
     
     <!--  CUSTOM POPUP  -->
-    <script defer>
+   <script defer>
         function setDynamicBackground(gName) {
             localStorage.setItem('gameName', gName);
-            
-            // analitycs click event 
+
+            // analytics click event 
             gtag('event', 'game_click', {
                 'event_category': 'Games',
-                'event_label': gName // Dynamic label
+                'event_label': gName
             });
-            
-            const overlay = document.getElementById("popupOverlay");
-            const popup = document.getElementById("popupBox");
-            const countdownElement = document.getElementById("countdown");
-            const closeBtn = document.getElementById("closeBtn");
 
-            overlay.style.display = "block";
-            popup.style.display = "block";
-
-            setTimeout(() => {
-                popup.style.opacity = "1";
-            }, 50);
-
-            let countdown = 5;
-            countdownElement.textContent = countdown;
-            closeBtn.style.display = "none";
-
-            const timer = setInterval(() => {
-                countdown--;
-                countdownElement.textContent = countdown;
-
-                if (countdown === 0) {
-                    clearInterval(timer);
-                    closeBtn.style.display = "inline-block";
-
-                    // After 2 seconds, redirect
-                    /*setTimeout(() => {
-                        overlay.style.display = "none";
-                        popup.style.opacity = "0";
-                        window.location.href = "play.html";
-                    }, 2000);*/
-                }
-            }, 1000);
+            // Directly redirect to the game page
+            window.location.href = "play.html";
         }
 
         function closeCustomPopup() {
-            // Optional: hide popup before redirect
-            document.getElementById("popupOverlay").style.display = "none";
-            document.getElementById("popupBox").style.opacity = "0";
-
-            // Wait a bit before redirect (optional fade-out effect)
-            setTimeout(() => {
-                window.location.href = "play.html";
-            }, 200);
+            // No need for this function anymore, but keeping it empty just in case it's called elsewhere
         }
     </script>
     
