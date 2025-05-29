@@ -1457,30 +1457,30 @@
                 tagElement.textContent = tag;
                 tagContainer.appendChild(tagElement);
             });
-            // let descriptionElement = document.getElementById("game-description");
-            // descriptionElement.innerHTML = gameDescription;
+            let descriptionElement = document.getElementById("game-description");
+            descriptionElement.innerHTML = gameDescription;
 
             // description with read more button
-            // let readMoreBtn = document.getElementById("read-more-btn");
-            // let maxLength = 440; 
-            // if (gameDescription.length > maxLength) {
-                // let shortText = gameDescription.substring(0, maxLength) + `... <a href="#" id="read-more-btn" class="read-more">Read More</a>`;
-                // descriptionElement.innerHTML = shortText; 
-                // let expanded = false;
-                // document.getElementById("read-more-btn").addEventListener("click", function (event) {
-                //     event.preventDefault(); 
-                //     if (!expanded) {
-                //         descriptionElement.innerHTML = gameDescription + ` <a href="#" id="read-more-btn" class="read-more">Read Less</a>`;
-                //         expanded = true;
-                //     } else {
-                //         descriptionElement.innerHTML = shortText;
-                //         expanded = false;
-                //     }
-                //     document.getElementById("read-more-btn").addEventListener("click", arguments.callee);
-                // });
-            // } else {
-            //     descriptionElement.innerText = gameDescription; 
-            // }
+            let readMoreBtn = document.getElementById("read-more-btn");
+            let maxLength = 440; 
+            if (gameDescription.length > maxLength) {
+                let shortText = gameDescription.substring(0, maxLength) + `... <a href="#" id="read-more-btn" class="read-more">Read More</a>`;
+                descriptionElement.innerHTML = shortText; 
+                let expanded = false;
+                document.getElementById("read-more-btn").addEventListener("click", function (event) {
+                    event.preventDefault(); 
+                    if (!expanded) {
+                        descriptionElement.innerHTML = gameDescription + ` <a href="#" id="read-more-btn" class="read-more">Read Less</a>`;
+                        expanded = true;
+                    } else {
+                        descriptionElement.innerHTML = shortText;
+                        expanded = false;
+                    }
+                    document.getElementById("read-more-btn").addEventListener("click", arguments.callee);
+                });
+            } else {
+                descriptionElement.innerText = gameDescription; 
+            }
         };
     </script>  
     <!--  CUSTOM POPUP ------------------------------------------------------------------------ -->
